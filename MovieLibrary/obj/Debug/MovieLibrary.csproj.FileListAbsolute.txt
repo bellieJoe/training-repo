@@ -1,0 +1,7 @@
+C:\Users\Bellie Joe\Desktop\training-repo\MovieLibrary\bin\Debug\MovieLibrary.exe.config
+C:\Users\Bellie Joe\Desktop\training-repo\MovieLibrary\bin\Debug\MovieLibrary.exe
+C:\Users\Bellie Joe\Desktop\training-repo\MovieLibrary\bin\Debug\MovieLibrary.pdb
+C:\Users\Bellie Joe\Desktop\training-repo\MovieLibrary\obj\Debug\MovieLibrary.csproj.AssemblyReference.cache
+C:\Users\Bellie Joe\Desktop\training-repo\MovieLibrary\obj\Debug\MovieLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Bellie Joe\Desktop\training-repo\MovieLibrary\obj\Debug\MovieLibrary.exe
+C:\Users\Bellie Joe\Desktop\training-repo\MovieLibrary\obj\Debug\MovieLibrary.pdb
