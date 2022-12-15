@@ -51,9 +51,9 @@ namespace MovieLibrary
             return count != 0 ? total / count : 0;
         }
 
-        public void addRating()
+        public void addRating(Rating rating)
         {
-
+            ratings.Add(rating);
         }
     }
 }

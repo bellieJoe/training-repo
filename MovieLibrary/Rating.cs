@@ -12,7 +12,7 @@ namespace MovieLibrary
         private string review;
         private double rate;
 
-        public Rating(string name, string review, int rate)
+        public Rating(string name, string review, double rate)
         {
             this.name = name;
             this.review = review;
@@ -21,6 +21,6 @@ namespace MovieLibrary
 
         public string Name { get => name; set => name = value; }
         public string Review { get => review; set => review = value; }
-        public int Rate { get => rate; set => rate = value; }
+        public double Rate { get => rate; set => rate = value; }
     }
 }

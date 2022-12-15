@@ -79,6 +79,16 @@ namespace MovieLibrary
             Console.Write("Rate: ");
             rate = Convert.ToDouble(Console.ReadLine());
 
+            int index = movieList.FindLastIndex(movie => movie.Id == id);
+            foreach (Movie movie in movieList)
+            {
+                if(movie.Id == id)
+                {
+                    Rating r = new Rating(name, review, rate);
+                    movie.addRating(r);
+                    movieList[index] = movie;
+                }
+            }
         }
 
     }
