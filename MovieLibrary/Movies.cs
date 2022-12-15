@@ -8,6 +8,17 @@ namespace MovieLibrary
 {
     class Movies
     {
+        private Movie[] movieList;
+
+        public void addMovie()
+        {
+
+        }
+
+        public void displayMovies()
+        {
+
+        }
 
     }
 }

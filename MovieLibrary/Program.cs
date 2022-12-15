@@ -8,6 +8,8 @@ namespace MovieLibrary
 {
     class Program
     {
+        Movies m = new Movies();
+
 
         public static void displayMenu()
         {
@@ -28,6 +30,20 @@ namespace MovieLibrary
         public static void processInput(int userInput)
         {
             Console.WriteLine(userInput);
+            switch (userInput)
+            {
+                case 1:
+                    m.displayMovies();
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                default:
+                    break;
+            }
         }
 
 
