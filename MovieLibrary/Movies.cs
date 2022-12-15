@@ -86,7 +86,78 @@ namespace MovieLibrary
                 {
                     Rating r = new Rating(name, review, rate);
                     movie.addRating(r);
-                    movieList[index] = movie;
+                }
+            }
+        }
+
+        public void printTop10()
+        {
+            List<Movie> newList = new List<Movie>();
+            int counter = 0;
+            if (this.movieList.Count == 0)
+            {
+                Console.WriteLine("\n\nNo Movies to show");
+            }
+            else
+            {
+                foreach(Movie movie in movieList)
+                {
+                    newList.Add(movie);
+                }
+                newList.Sort(sortMovieByRating);
+                Console.WriteLine("\nMOVIES");
+                foreach (Movie movie in newList)
+                {
+                    if (counter < 11)
+                    {
+                        Console.WriteLine("Id: " + movie.Id);
+                        Console.WriteLine("Title: " + movie.Title);
+                        Console.WriteLine("Director: " + movie.Director);
+                        Console.WriteLine("Genre: " + movie.Genre);
+                        Console.WriteLine("Date Released: " + movie.DateReleased);
+                        Console.WriteLine("Raitng: " + movie.computeRatingSummary() + "/5");
+                        Console.WriteLine("\n");
+                    }
+                    counter++;
+                }
+                
+            }
+            
+        }
+
+        private static int sortMovieByRating(Movie a, Movie b)
+        {
+            if (a.computeRatingSummary() == b.computeRatingSummary())
+            {
+                return 0;
+            }
+            if (a.computeRatingSummary() > b.computeRatingSummary())
+            {
+                return -1;
+            }
+            return 1;
+        }
+
+        public void viewReviews()
+        {
+            int id;
+
+            displayMovies();
+
+            Console.Write("Movie Id: ");
+            id = Convert.ToInt32(Console.ReadLine());
+            foreach(Movie movie in movieList)
+            {
+                if(movie.Id == id)
+                {
+                    Console.WriteLine("\n" + movie.Title + " reviews");
+                    foreach(Rating rating in movie.Ratings)
+                    {
+                        Console.WriteLine("Name: " + rating.Name);
+                        Console.WriteLine("Rate: " + rating.Rate + "/5");
+                        Console.WriteLine("Review: " + rating.Review);
+                        Console.WriteLine("\n");
+                    }
                 }
             }
         }
