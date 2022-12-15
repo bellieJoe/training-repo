@@ -8,7 +8,7 @@ namespace MovieLibrary
 {
     class Program
     {
-        Movies m = new Movies();
+        static Movies m = new Movies();
 
 
         public static void displayMenu()
@@ -29,13 +29,13 @@ namespace MovieLibrary
 
         public static void processInput(int userInput)
         {
-            Console.WriteLine(userInput);
             switch (userInput)
             {
                 case 1:
                     m.displayMovies();
                     break;
                 case 2:
+                    m.addMovie();
                     break;
                 case 3:
                     break;
@@ -55,6 +55,9 @@ namespace MovieLibrary
                 displayMenu();
                 userInput = Convert.ToInt32(Console.ReadLine());
                 processInput(userInput);
+                Console.Write("\nPRESS ENTER TO CONTINUE");
+                Console.ReadLine();
+                Console.Clear();
             }
             while (userInput != 0);
         }

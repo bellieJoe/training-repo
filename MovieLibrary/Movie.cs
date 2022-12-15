@@ -17,8 +17,9 @@ namespace MovieLibrary
         private Rating[] ratings;
 
         // constructors
-        public Movie(string title, string director, string dateReleased, string genre)
+        public Movie(int id, string title, string director, string dateReleased, string genre)
         {
+            this.id = id;
             this.title = title;
             this.director = director;
             this.dateReleased = dateReleased;
