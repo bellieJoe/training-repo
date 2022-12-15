@@ -10,7 +10,7 @@ namespace MovieLibrary
     {
         private string name;
         private string review;
-        private int rate;
+        private double rate;
 
         public Rating(string name, string review, int rate)
         {

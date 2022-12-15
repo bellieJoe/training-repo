@@ -47,16 +47,38 @@ namespace MovieLibrary
             }
             else
             {
-                foreach(Movie movie in movieList)
+                Console.WriteLine("\nMOVIES");
+                foreach (Movie movie in movieList)
                 {
-                    Console.WriteLine("\n");
                     Console.WriteLine("Id: " + movie.Id);
                     Console.WriteLine("Title: " + movie.Title);
                     Console.WriteLine("Director: " + movie.Director);
                     Console.WriteLine("Genre: " + movie.Genre);
                     Console.WriteLine("Date Released: " + movie.DateReleased);
+                    Console.WriteLine("Raitng: " + movie.computeRatingSummary() + "/5");
+                    Console.WriteLine("\n");
                 }
             }
+        }
+
+        public void addRating()
+        {
+            int id;
+            double rate;
+            string review, name;
+
+            displayMovies();
+
+            Console.WriteLine("ADD RATING");
+            Console.Write("Movie Id: ");
+            id = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Name: ");
+            name = Console.ReadLine();
+            Console.Write("Review: ");
+            review = Console.ReadLine();
+            Console.Write("Rate: ");
+            rate = Convert.ToDouble(Console.ReadLine());
+
         }
 
     }

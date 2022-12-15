@@ -14,7 +14,7 @@ namespace MovieLibrary
         private string director;
         private string dateReleased;
         private string genre;
-        private Rating[] ratings;
+        private List<Rating> ratings =  new List<Rating>();
 
         // constructors
         public Movie(int id, string title, string director, string dateReleased, string genre)
@@ -39,9 +39,16 @@ namespace MovieLibrary
 
         }
 
-        public int computeRatingSummary()
+        public double computeRatingSummary()
         {
-            return 0;
+            int total = 0;
+            int count = 0;
+            foreach (Rating rating in ratings)
+            {
+                count++;
+                total += rating.Rate;
+            }
+            return count != 0 ? total / count : 0;
         }
 
         public void addRating()
