@@ -32,16 +32,12 @@ namespace MovieLibrary
         public string Title { get => title; set => title = value; }
         public string Director { get => director; set => director = value; }
         public string Genre { get => genre; set => genre = value; }
+        internal List<Rating> Ratings { get => ratings; }
 
         // methods
-        public void printTop10()
-        {
-
-        }
-
         public double computeRatingSummary()
         {
-            int total = 0;
+            double total = 0;
             int count = 0;
             foreach (Rating rating in ratings)
             {

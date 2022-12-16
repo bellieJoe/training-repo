@@ -22,6 +22,7 @@ namespace MovieLibrary
             Console.WriteLine("ENTER 2: Add new Movie");
             Console.WriteLine("ENTER 3: Add new Ratings");
             Console.WriteLine("ENTER 4: Display Top 10 Movies");
+            Console.WriteLine("ENTER 5: View Ratings");
             Console.WriteLine("ENTER 0: Exit Application");
             Console.Write("\nINPUT: ");
         }
@@ -38,9 +39,13 @@ namespace MovieLibrary
                     m.addMovie();
                     break;
                 case 3:
-                    
+                    m.addRating();
                     break;
                 case 4:
+                    m.printTop10();
+                    break;
+                case 5:
+                    m.viewReviews();
                     break;
                 default:
                     break;
