@@ -1,12 +1,12 @@
-package org.myfirstapp.limpiada;
-
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
+package org.myfirstapp.jardeleza;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainScreen extends AppCompatActivity {
 
@@ -34,7 +34,7 @@ public class MainScreen extends AppCompatActivity {
         builder.show();
     }
 
-    public void navigateToAbout(View v){
+    public void navigateToAbout(View v) {
         Intent i = new Intent(this, AboutMe.class);
         startActivity(i);
     }

@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'org.myfirstapp.limpiada'
+    namespace 'org.myfirstapp.jardeleza'
     compileSdk 32
 
     defaultConfig {
-        applicationId "org.myfirstapp.limpiada"
+        applicationId "org.myfirstapp.jardeleza"
         minSdk 21
         targetSdk 32
         versionCode 1

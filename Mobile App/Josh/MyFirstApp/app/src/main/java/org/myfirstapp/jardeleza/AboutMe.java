@@ -1,10 +1,12 @@
-package org.myfirstapp.limpiada;
+package org.myfirstapp.jardeleza;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class AboutMe extends AppCompatActivity {
 
@@ -14,7 +16,7 @@ public class AboutMe extends AppCompatActivity {
         setContentView(R.layout.activity_about_me);
     }
 
-    public void navigateToMainScreen(View v){
+    public void navigateToMainScreen(View v) {
         Intent i = new Intent(this, MainScreen.class);
         startActivity(i);
     }
