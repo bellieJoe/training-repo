@@ -4,7 +4,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainScreen extends AppCompatActivity {
 
@@ -30,5 +32,10 @@ public class MainScreen extends AppCompatActivity {
             }
         });
         builder.show();
+    }
+
+    public void navigateToAbout(View v){
+        Intent i = new Intent(this, AboutMe.class);
+        startActivity(i);
     }
 }
