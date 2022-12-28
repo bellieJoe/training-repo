@@ -13,7 +13,7 @@
         android:layout_marginTop="40dp"
         android:textStyle="bold"
         android:text="My About Me"
-        android:textColor="@color/design_default_color_primary"
+        android:textColor="@color/purple_700"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Felix Lazarus N. Limpiada"
+        android:textColor="@color/black"
+        android:text="Joshua N. Jardeleza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@mipmap/icprofile" />
+        app:srcCompat="@mipmap/ic_prof" />
 
     <Button
         android:id="@+id/button"
@@ -46,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:onClick="navigateToAbout"
-        android:text="Want to Know me?"
+        android:text="About Me"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />

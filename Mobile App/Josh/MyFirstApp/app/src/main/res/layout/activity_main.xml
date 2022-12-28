@@ -6,25 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:text="MY FIRST APP"
-        android:textSize="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="196dp"
+        android:indeterminateTint="@color/purple_200"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ProgressBar
-        android:id="@+id/idPBLoading"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:indeterminateTint="@color/black"
+        android:layout_marginTop="20dp"
+        android:text="MYFIRSTAPP"
+        android:textColor="@color/purple_700"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/idPBLoading" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Felix Lazarus N. Limpiada"
+                android:text="Joshua N. Jardeleza"
                 android:textSize="18dp" />
         </TableRow>
 
@@ -66,7 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="August 27, 1993"
+                android:text="July 17, 1998"
                 android:textSize="18dp" />
         </TableRow>
 
@@ -86,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Gitnang Bayan, Mogpog, Marinduque"
+                android:text="Nangka Uno, Mogpog, Marinduque"
                 android:textSize="18dp" />
         </TableRow>
 
@@ -98,7 +98,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Email"
+                android:text="Age"
                 android:textColor="@color/black"
                 android:textSize="18dp" />
 
@@ -106,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="fnovalimpiada@gmail.com"
+                android:text="24"
                 android:textSize="18dp" />
         </TableRow>
 
@@ -126,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Married"
+                android:text="Single"
                 android:textSize="18dp" />
         </TableRow>
 
@@ -172,7 +172,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="My hobbies are playing basketball, playing Dota, hanging out with friends and petting my dogs."
+        android:text="I like unwindung with nature and Doing roadtrips anywhere."
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
