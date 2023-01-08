@@ -68,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
         clear2.setEnabled(false);
     }
 
+    public void about(View v){
+        Intent i = new Intent(MainActivity.this, AboutActivity.class);
+        startActivity(i);
+    }
+
     public void compute(View v){
         EditText rate = (EditText) findViewById(R.id.txtRate);
         Button clear2 = (Button) findViewById(R.id.btnClear2);
@@ -100,4 +105,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }).create().show();
     }
+
+
 }
