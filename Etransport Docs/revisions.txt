@@ -1,0 +1,13 @@
+-Pag nadisapprove yung refund na request ay dapat nanonotify yung customer kung continue yung byahe or they can communicate thru messages
+-Mag provide ng prompt message para sa pagtransfer
+-next time ***
+-Edit button for fare dapat maglagay
+
+-sa part ng operator dapat may reports
+-income reports from the driver dapat meron
+
+DONE
+-Dapat may forgot password - DONE
+-Edit button sa luggage size & price dapat wala na - DONE
+-Dapat makita kung ilang slot ang available - 'kita naman kung ilang yung available'
+-size ng luggage dapat nakikita ng customer yung sukat ng luggage
